@@ -36,7 +36,7 @@
     <name>OrientDB Distributed Server</name>
 
     <properties>
-        <hz.version>3.12.13</hz.version>
+        <hz.version>5.2.5</hz.version>
         <javac.src.version>1.6</javac.src.version>
         <javac.target.version>1.6</javac.target.version>
         <jar.manifest.mainclass>com.orientechnologies.orient.server.OServerMain</jar.manifest.mainclass>
@@ -151,15 +151,15 @@
                                 <include>**/UniqueCompositeIndexDistributedIT.java</include>
                             </includes>
                             <systemPropertyVariables>
-                                <kubeConfig />
+                                <kubeConfig/>
                                 <orientdbLabel>orientdb</orientdbLabel>
                                 <orientdbHttpPort>2480</orientdbHttpPort>
                                 <orientdbBinaryPort>2424</orientdbBinaryPort>
                                 <orientdbHazelcastPort>2434</orientdbHazelcastPort>
-                                <orientdbDockerImage />
+                                <orientdbDockerImage/>
                                 <orientdbVolumeSize>2</orientdbVolumeSize>
-                                <databaseVolumeStorageClass />
-                                <configVolumeStorageClass />
+                                <databaseVolumeStorageClass/>
+                                <configVolumeStorageClass/>
                                 <kubernetesNamespace>orientdb</kubernetesNamespace>
                             </systemPropertyVariables>
                         </configuration>
